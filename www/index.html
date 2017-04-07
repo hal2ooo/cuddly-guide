@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+    The very first application
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+    <title>Hello World</title>
+</head>
+
+<!--  BEGINS: Page style settings -->
+
+<style>
+    html {
+        font-family: inherit;
+        background-color: inherit;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2.5em;
+        padding-top: 10px;
+        text-align: left;
+    }
+</style>
+
+<!--  ENDS: Page style settings -->
+<!--  BEGINS: Content for our application -->
+
+<body class="container text-center">
+
+    <h1>Förste datadings</h1>
+    <img src="img/molde.jpg">
+    <P>Hva skal man skrive her da? Kan dette overhode väre nyttig for noen? man kan poste fine bilder da.</P>
+    RART
+    
+    <button id="TRYKK1" type="button" class="btn btn-danger">Danger</button>
+    <button id="TRYKK2" type="button" class="btn btn-danger">Egentlig</button>
+    
+    Hva skjer'a
+
+</body>
+
+<!--  ENDS: Content for our application  -->
+
+
+<!--  BEGINS: Script block  -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+    $("#TRYKK2").hide();
+     $("#TRYKK1").click(function() {
+	alert("IGJEN NO");
+	$("#TRYKK2").show();
+    });
+    
+    $("#TRYKK2").click(function() {
+	alert("IGJEN NO");
+    });
+</script>
+<!--  ENDS: Script block  -->
+
+</html>
